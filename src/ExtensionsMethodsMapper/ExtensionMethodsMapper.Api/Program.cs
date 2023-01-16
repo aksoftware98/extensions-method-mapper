@@ -1,7 +1,15 @@
+using ExtensionMethodsMapper.Api.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/api/customers/{id}", (int id) => "Hello World!");
+builder.Services.AddScoped<ICustomersRepository, CustomersRepository>(); 
 
-app.MapGet("/api/customers", () => "All customers retrieved");
+// Get all the customers 
+app.MapGet("/api/customers", 
+		   (ICustomersRepository customersRepo) => customersRepo.GetAll());
+
+// Get a full customer details by Id
+app.MapGet("/api/customers/{id}", 
+		   (int id, ICustomersRepository customersRepo) => customersRepo.GetById(id));
 app.Run();
