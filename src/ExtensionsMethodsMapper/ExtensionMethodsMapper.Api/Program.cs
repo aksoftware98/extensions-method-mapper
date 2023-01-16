@@ -1,9 +1,10 @@
 using ExtensionMethodsMapper.Api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+// Register the customers repository 
+builder.Services.AddScoped<ICustomersRepository, CustomersRepository>(); 
 var app = builder.Build();
 
-builder.Services.AddScoped<ICustomersRepository, CustomersRepository>(); 
 
 // Get all the customers 
 app.MapGet("/api/customers", 
