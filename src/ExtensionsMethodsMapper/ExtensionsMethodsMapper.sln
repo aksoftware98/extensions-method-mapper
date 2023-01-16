@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsMapper.Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsMapper.Shared", "ExtensionMethodsMapper.Shared\ExtensionMethodsMapper.Shared.csproj", "{9C7CAC22-5337-440D-B84A-D19DF39158CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsMapper.Api", "ExtensionMethodsMapper.Api\ExtensionMethodsMapper.Api.csproj", "{ECE71476-49BE-4C82-A7F6-F4AB07A28774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9C7CAC22-5337-440D-B84A-D19DF39158CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C7CAC22-5337-440D-B84A-D19DF39158CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C7CAC22-5337-440D-B84A-D19DF39158CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE71476-49BE-4C82-A7F6-F4AB07A28774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE71476-49BE-4C82-A7F6-F4AB07A28774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE71476-49BE-4C82-A7F6-F4AB07A28774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE71476-49BE-4C82-A7F6-F4AB07A28774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
